@@ -7,7 +7,7 @@
 <section class="plant-box" >
     <% stekjes.forEach(stekje => { %>
     <article class="plant-box_card" >
-        <img src="/assets/Philodendron.jpeg" alt="Philodendron">
+        <img src="<%= stekje.fotos[0].small  %>" alt="<%= stekje.naam  %>" width="<%= stekje.fotos[0].width  %>" height="<% stekje.fotos[0].height %>">
         <div class="plant-box_card-info" id="the-plants" >
             <h2><%= stekje.naam %></h2>
             <div class="plant-box_card-info-extra">

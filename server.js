@@ -19,7 +19,9 @@ server.use('/stekjes', stekjesRoute)
 server.use(express.json())
 server.use(express.urlencoded({ extended: true }))
 
-
+server.get('/aanmelden', function (request, response) {
+  response.render('stekje-aanmelden')
+})
 // Start met luisteren
 server.listen(server.get('port'), () => {
   console.log(`Application started on http://localhost:${server.get('port')}`)

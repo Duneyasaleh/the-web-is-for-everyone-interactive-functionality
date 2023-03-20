@@ -9,9 +9,12 @@ const stekjes = express.Router()
 
 stekjes.get('/', function (request, response) {
     let stekjesUrl = process.env.API_URL+'/stekjes'
-     fetchJson(stekjesUrl).then((data) => {
-      response.render('stekjes',data)
-       })
+    fetchJson(stekjesUrl).then((data) => {
+        response.render('stekjes',data)
+        data.stekjes.map((stekje)=>{
+            console.log(stekje.fotos[0].original)
+        })
+    })
     
   })
   stekjes.get('/:id', function (request, response) {
@@ -23,7 +26,4 @@ stekjes.get('/', function (request, response) {
     
   })
 
-  stekjes.get('/aanmelden', function (request, response) {
-    response.render('stekje-aanmelden')
-  })
   export default stekjes
