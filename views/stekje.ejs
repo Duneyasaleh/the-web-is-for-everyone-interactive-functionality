@@ -1,0 +1,44 @@
+<%- include('./partials/head.ejs') %>
+
+<div class="home_page-container">
+    <div class="groene_achter-img">
+    <img src="/assets/Philodendron.jpeg" alt="homepage img">
+    
+    </div>
+  <div class="home_page_text">
+       <h1><%= stekje.naam  %></h1>
+       <em><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.7594 17.9162C10.7594 17.9162 10.3934 16.0218 7.83156 14.3378" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5.41679 11.8978L5.23875 13.7465C5.12674 14.91 5.99909 15.946 7.16263 16.058C8.64484 16.058 9.33849 15.3334 9.44842 14.1918C9.55834 13.0501 8.72197 12.0355 7.58031 11.9256L5.61281 11.7361C5.51407 11.7266 5.42628 11.799 5.41679 11.8978Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M10.8436 17.8912C10.8436 17.8912 10.9933 16.5439 12.0412 15.3462" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14.4754 12.8737L14.6534 14.7224C14.7654 15.8859 13.8931 16.9219 12.7296 17.0339C11.5879 17.1439 10.5537 16.3094 10.4438 15.1677C10.3338 14.0261 11.1702 13.0115 12.3119 12.9015L14.2794 12.7121C14.3781 12.7026 14.4659 12.7749 14.4754 12.8737Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M13 3V1M13 3V5M13 3H8.5M1 9V18C1 19.1046 1.89543 20 3 20H17C18.1046 20 19 19.1046 19 18V9H1Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M1 9V5C1 3.89543 1.89543 3 3 3H5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5 1V5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M19 9V5C19 3.89543 18.1046 3 17 3H16.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+         <%= stekje.aanmelddatum  %></em>
+       <p><%= stekje.verpotten  %></p>
+       <a href="/aanmelden" class="Home-aanmelden_knop">Aanmelden</a>
+  </div>
+  </div>
+
+  <div class="home_page-exinfo">
+    <div>
+      <img src="/assets/remedy.png" alt="Stekje ruilen">
+      <h2>Giftig</h2>
+      <p><%= stekje.giftig  %></p>
+    </div>
+    <div>
+      <img src="/assets/watering-plants.png" alt="Stekje ruilen">
+      <h2>Voeding</h2>
+      <p><%= stekje.voeding  %></p>
+    </div>
+    <div>
+      <img src="/assets/save-the-planet.png" alt="Stekje ruilen">
+      <h2>Landvanherkomst</h2>
+      <p><%= stekje.landvanherkomst  %></p>
+    </div>
+    </div>
+
+<%- include('./partials/foot.ejs') %> 
