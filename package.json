@@ -1,7 +1,7 @@
 {
-  "name": "connect-your-tribe-profile-card",
+  "name": "the-web-is-for-everyone-interactive-functionality",
   "version": "1.0.0",
-  "description": "Redesign je visitekaartje op basis van een bestaande API.",
+  "description": "plantenstekjes over en zou je die graag willen ruilen voor een nieuw plantje? Meld je stekje hier aan",
   "main": "server.js",
   "type": "module",
   "directories": {
@@ -13,19 +13,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fdnd-task/connect-your-tribe-profile-card.git"
+    "url": "git+https://github.com/fdnd-task/the-web-is-for-everyone-interactive-functionality.git"
   },
   "keywords": [
     "node",
     "express",
     "ejs"
   ],
-  "author": "J.P. Sturkenboom <j.p.sturkenboom@hva.nl>",
+  "author": "Duneya saleh <info@duneyasaleh.com",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/fdnd-task/connect-your-tribe-profile-card/issues"
+    "url": "https://github.com/Duneyasaleh/the-web-is-for-everyone-interactive-functionality/issues"
   },
-  "homepage": "https://github.com/fdnd-task/connect-your-tribe-profile-card#readme",
+  "homepage": "https://github.com/Duneyasaleh/the-web-is-for-everyone-interactive-functionality#readme",
   "dependencies": {
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",

@@ -13,15 +13,19 @@ server.set('views', './views')
 // Stel de public map in
 server.use(express.static('public'))
 
-server.use('/', indexRoute)
-server.use('/stekjes', stekjesRoute)
-
 server.use(express.json())
 server.use(express.urlencoded({ extended: true }))
 
-server.get('/aanmelden', function (request, response) {
-  response.render('stekje-aanmelden')
-})
+server.use('/', indexRoute)
+server.use('/stekjes', stekjesRoute)
+
+// server.get('/aanmelden', function (request, response) {
+//   response.render('stekje-aanmelden')
+// })
+// server.get('/registreren', function (request, response) {
+//   response.render('stekje-registreren')
+// })
+
 // Start met luisteren
 server.listen(server.get('port'), () => {
   console.log(`Application started on http://localhost:${server.get('port')}`)

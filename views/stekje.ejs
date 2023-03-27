@@ -2,7 +2,11 @@
 
 <div class="home_page-container">
     <div class="groene_achter-img">
-      <img src="<%= stekje.fotos[0].small  %>" alt="<%= stekje.naam  %>" width="<%= stekje.fotos[0].width  %>" height="<% stekje.fotos[0].height %>">
+      <% if(stekje.fotos[0]) { %>
+        <img src="<%= stekje.fotos[0].small  %>" alt="<%= stekje.naam  %>" width="<%= stekje.fotos[0].width  %>" height="<% stekje.fotos[0].height %>">
+        <% }else{ %>
+            <img src="/assets/Philodendron.jpeg" alt="Placeholder avatar" />
+            <% } %>
     </div>
   <div class="home_page_text">
        <h1><%= stekje.naam  %></h1>
@@ -16,9 +20,13 @@
         <path d="M5 1V5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M19 9V5C19 3.89543 18.1046 3 17 3H16.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-         <%= stekje.aanmelddatum  %></em>
+        <% if(stekje.aanmelddatum) { %>
+          <%= stekje.aanmelddatum  %></em>
+          <% }else{ %>
+              no datum</em>
+              <% } %>
        <p><%= stekje.verpotten  %></p>
-       <a href="/aanmelden" class="Home-aanmelden_knop">Aanmelden</a>
+       <a href="registreren" class="Home-aanmelden_knop">Registreren </a>
   </div>
   </div>
 

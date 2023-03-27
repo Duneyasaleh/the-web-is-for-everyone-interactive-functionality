@@ -2,29 +2,26 @@
 <section class="stekje-aanmelden-form">
     <h1 class="stekje-aanmelden-form_h1">Stekje toevoegen:</h1>
     <form action="/stekjes" method="post">
-        <label for="voornaam">Voornaam *</label>
-        <input type="text" id="voornaam" name="Voornaam" required>
-    
-        <label for="achternaam">Achternaam *</label>
-        <input type="text" id="achternaam" name="Achternaam" required>
+      <label for="naam">Naam van uw stekje *</label>
+      <input type="text" id="naam" name="naam" value="<%= locals.naam ?? '' %>" >
 
-        <label for="email">E-mail *</label>
-        <input type="email" id="email" name="Email" required>
-    
-        <label for="telefoonnummer">Telefoonnummer</label>
-        <input type="tel" id="telefoonnummer" name="Telefoonnummer">
+      <label for="verzorging">Verzorging informatie</label>
+        <textarea id="verzorging" name="verzorging" style="height:100px"  value="<%= locals.verzorging ?? '' %>" ></textarea>
 
-        <label for="Stekjenaam">Naam van uw stekje *</label>
-        <input type="text" id="stekje-naam" name="stekje-naam" required>
+        <label for="voeding">Voeding informatie</label>
+        <textarea id="voeding" name="voeding" style="height:100px" value="<%= locals.voeding ?? '' %>" ></textarea>
 
-        <label for="subject">Verzorging informatie</label>
-        <textarea id="subject" name="subject" style="height:150px" ></textarea>
+        <label for="giftig">Giftig informatie</label>
+        <textarea id="giftig" name="giftig" style="height:100px"  value="<%= locals.giftig ?? '' %>" ></textarea>
 
-        <label for="stekje-img">Upload een foto van uw stekje *</label>
-        <input type="file" id="stekje-img" name="stekje-img" accept="image/png, image/jpeg" required>
+        <label for="landvanherkomst">Uit welke land uw stekje ?</label>
+        <textarea id="landvanherkomst" name="landvanherkomst" style="height:100px"  value="<%= locals.landvanherkomst ?? '' %>" ></textarea>
+
+        <label for="fotos">Foto van uw stekje *</label>
+        <input type="text" id="fotos" name="fotos"  value=""/>
     
         <input type="submit" value="Stekje aanmelden">
       </form>
-      <img class="plant-img-form" src="assets/plant-stem.png" alt="plant-stem">
+      <img class="plant-img-form" src="../assets/plant-stem.png" alt="plant-stem">
 </section>
 <%- include('./partials/foot.ejs') %> x
