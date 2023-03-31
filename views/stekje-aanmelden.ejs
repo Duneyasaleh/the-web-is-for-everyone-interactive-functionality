@@ -3,7 +3,7 @@
     <h1 class="stekje-aanmelden-form_h1">Stekje toevoegen:</h1>
     <form action="/stekjes" method="post">
       <label for="naam">Naam van uw stekje *</label>
-      <input type="text" id="naam" name="naam" value="<%= locals.naam ?? '' %>" >
+      <input type="text" id="naam" name="naam" value="<%= locals.naam ?? '' %>" minlength="5"  required>
 
       <label for="verzorging">Verzorging informatie</label>
         <textarea id="verzorging" name="verzorging" style="height:100px"  value="<%= locals.verzorging ?? '' %>" ></textarea>

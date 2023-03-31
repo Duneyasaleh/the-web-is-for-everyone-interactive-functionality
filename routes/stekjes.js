@@ -17,11 +17,11 @@ stekjes.post('/', (request, response) =>{
   postJson(stekjesUrl, request.body).then((data) => {
     // De waarden uit het formulier (niet de API)
     let newStekje = { ...request.body }
-       // Stuur de gebruiker naar / als het gelukt is
+    // Stuur de gebruiker naar / als het gelukt is
        if (data.success) {
-        response.redirect('/?memberPosted=true') // meegeven, message meegeven
+        response.redirect('/stekjes') // meegeven, message meegeven
   
-        // Toon opnieuw het formulier (met waarden) als het niet gelukt is
+    // Toon opnieuw het formulier (met waarden) als het niet gelukt is
       } else {
         const errormessage = `${data.message}: Mogelijk komt dit door de slug die al bestaat.`
         const newdata = { error: errormessage, values: newStekje }
@@ -37,16 +37,11 @@ stekjes.get('/',(request, response) => {
     fetchJson(stekjesUrl).then((data) => {
         response.render('stekjes',data)
         data.stekjes.map((stekje)=>{
-            // console.log(stekje.fotos[0].original)
+    // console.log(stekje.fotos[0].original)
         })
     })
     
 })
-
-stekjes.get('/registreren', function (request, response) {
-    response.render('stekje-registreren')
- })
-
 
 stekjes.get('/:id', (request, response) => {
     let id = request.params.id
@@ -56,7 +51,5 @@ stekjes.get('/:id', (request, response) => {
     })
 
 })
-
-
 
   export default stekjes

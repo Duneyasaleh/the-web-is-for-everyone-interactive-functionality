@@ -1,16 +1,17 @@
 <%- include('./partials/head.ejs') %>
-
 <div class="home_page-container">
-    <div class="groene_achter-img">
-      <% if(stekje.fotos[0]) { %>
-        <img src="<%= stekje.fotos[0].small  %>" alt="<%= stekje.naam  %>" width="<%= stekje.fotos[0].width  %>" height="<% stekje.fotos[0].height %>">
-        <% }else{ %>
-            <img src="/assets/Philodendron.jpeg" alt="Placeholder avatar" />
-            <% } %>
-    </div>
-  <div class="home_page_text">
-       <h1><%= stekje.naam  %></h1>
-       <em><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <div class="groene_achter-img">
+  <div class="achtergrond_home"></div>
+  <% if(stekje.fotos[0]) { %>
+    <img src="<%= stekje.fotos[0].small  %>" alt="<%= stekje.naam  %>" width="<%= stekje.fotos[0].width  %>" height="<% stekje.fotos[0].height %>">
+    <% }else{ %>
+        <img src="/assets/Philodendron.jpeg" alt="Placeholder avatar" />
+        <% } %>
+  
+  </div>
+<div class="home_page_text">
+     <h1><%= stekje.naam  %></h1> 
+     <em><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M10.7594 17.9162C10.7594 17.9162 10.3934 16.0218 7.83156 14.3378" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M5.41679 11.8978L5.23875 13.7465C5.12674 14.91 5.99909 15.946 7.16263 16.058C8.64484 16.058 9.33849 15.3334 9.44842 14.1918C9.55834 13.0501 8.72197 12.0355 7.58031 11.9256L5.61281 11.7361C5.51407 11.7266 5.42628 11.799 5.41679 11.8978Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M10.8436 17.8912C10.8436 17.8912 10.9933 16.5439 12.0412 15.3462" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
@@ -25,10 +26,10 @@
           <% }else{ %>
               no datum</em>
               <% } %>
-       <p><%= stekje.verpotten  %></p>
-       <a href="registreren" class="Home-aanmelden_knop">Registreren </a>
-  </div>
-  </div>
+     <p><%= stekje.verpotten  %></p>
+     <a href="#registreren" class="Home-aanmelden_knop">Registreren</a>
+</div>
+</div>
 
   <div class="home_page-exinfo">
     <div>
@@ -47,5 +48,42 @@
       <p><%= stekje.landvanherkomst  %></p>
     </div>
     </div>
+
+    <section class="plant-register">
+     <article class="plant-register_form" id="registreren">
+      <h2 class="stekje-aanmelden-form_h1">Stekje registreren :</h2>
+      <form action="/stekjes" method="post">
+        <label for="voornaam">Voornaam *</label>
+        <input type="text" id="voornaam" name="Voornaam" required>
+    
+        <label for="achternaam">Achternaam *</label>
+        <input type="text" id="achternaam" name="Achternaam" required>
+
+        <label for="email">E-mail *</label>
+        <input type="email" id="email" name="Email" required>
+    
+        <label for="telefoonnummer">Telefoonnummer</label>
+        <input type="tel" id="telefoonnummer" name="Telefoonnummer">
+
+        <label for="datum">Ophaal datum</label>
+        <input type="date" id="date" name="date">
+
+        <label for="subject">Opmerking</label>
+        <textarea id="subject" name="subject" style="height:150px" ></textarea>
+    
+        <input type="submit" value="Stekje aanmelden">
+      </form>
+      <img class="plant-register-img-form" src="../assets/plant-stem.png" alt="plant-stem">
+     </article>
+     <article class="plant-register_comments">
+      <div>
+        <h3>jan de vries</h3>
+        <p>heeft <%= stekje.naam  %> geresserveerd ^_^<br>
+         Opmerking
+ 
+        </p>
+      </div>
+    </article>
+    </section>
 
 <%- include('./partials/foot.ejs') %> 
