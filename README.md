@@ -64,11 +64,11 @@ In deze sprint heb ik gewerkt aan het website voor de stekjes ruilen. Dit is een
 
 ## Gebruik 💻
 Je komt op een homepage waar je alle informatie vindt over de Plant swap
-- Klik om onze stekken te bekijken
-- U komt op de overzichtspagina van alle stekken
-- U kunt een stekje toevoegen en ook op een stekje klikken om meer over die stekje lezen
--  Als u een stekje wilt toevoegen, klikt u op de knop stekje toevoegen
-- U gaat naar het formulier waar u informatie van uw stekje toevoegt en drukt op verzenden en dan wordt het toegevoegd aan de overzichtspagina
+1. Klik om onze stekken te bekijken
+2. U komt op de overzichtspagina van alle stekken
+3. U kunt een stekje toevoegen en ook op een stekje klikken om meer over die stekje lezen
+4.  Als u een stekje wilt toevoegen, klikt u op de knop stekje toevoegen
+5. U gaat naar het formulier waar u informatie van uw stekje toevoegt en drukt op verzenden en dan wordt het toegevoegd aan de overzichtspagina
 
 
 ## Bronnen
