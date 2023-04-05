@@ -57,8 +57,9 @@ In deze sprint heb ik gewerkt aan het website voor de stekjes ruilen. Dit is een
 3. Open hem in je code-editor.
 4. open de terminal en type _npm install_.
 5. Daarna door gerbruik van _npm start_ krijg je een localhost link waar je de code live ziet.
-6. check de .env-exmpel voor de Api
-7. Live zetten van je project kan met behulp van cyclic
+6. Check even de .env-exmpel bestnadje voor de Api.
+7. In de package-lock.json bestandje zie je alle modules die ik gebruik voor deze project.
+7. Live zetten van je project kan met behulp van cyclic.
 
 
 ## Gebruik 💻
