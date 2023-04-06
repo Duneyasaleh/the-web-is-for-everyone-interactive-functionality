@@ -57,10 +57,19 @@ In deze sprint heb ik gewerkt aan het website voor de stekjes ruilen. Dit is een
 3. Open hem in je code-editor.
 4. open de terminal en type _npm install_.
 5. Daarna door gerbruik van _npm start_ krijg je een localhost link waar je de code live ziet.
-6. Live zetten van je project kan met behulp van cyclic
+6. Check even de .env-exmpel bestnadje voor de Api.
+7. In de package-lock.json bestandje zie je alle modules die ik gebruik voor deze project.
+7. Live zetten van je project kan met behulp van cyclic.
 
 
 ## Gebruik 💻
+Je komt op een homepage waar je alle informatie vindt over de Plant swap
+1. Klik om onze stekken te bekijken
+2. U komt op de overzichtspagina van alle stekken
+3. U kunt een stekje toevoegen en ook op een stekje klikken om meer over die stekje lezen
+4.  Als u een stekje wilt toevoegen, klikt u op de knop stekje toevoegen
+5. U gaat naar het formulier waar u informatie van uw stekje toevoegt en drukt op verzenden en dan wordt het toegevoegd aan de overzichtspagina
+
 
 ## Bronnen
 de bronnen die zijn gebruikt voor dit project zijn:
