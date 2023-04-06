@@ -19,12 +19,6 @@ server.use(express.urlencoded({ extended: true }))
 server.use('/', indexRoute)
 server.use('/stekjes', stekjesRoute)
 
-// server.get('/aanmelden', function (request, response) {
-//   response.render('stekje-aanmelden')
-// })
-// server.get('/registreren', function (request, response) {
-//   response.render('stekje-registreren')
-// })
 
 // Start met luisteren
 server.listen(server.get('port'), () => {

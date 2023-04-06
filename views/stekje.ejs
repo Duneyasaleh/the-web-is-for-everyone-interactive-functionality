@@ -1,13 +1,13 @@
 <%- include('./partials/head.ejs') %>
 <div class="home_page-container">
   <div class="groene_achter-img">
-  <div class="achtergrond_home"></div>
+  <div class="stekje-img">
   <% if(stekje.fotos[0]) { %>
     <img src="<%= stekje.fotos[0].small  %>" alt="<%= stekje.naam  %>" width="<%= stekje.fotos[0].width  %>" height="<% stekje.fotos[0].height %>">
     <% }else{ %>
         <img src="/assets/Philodendron.jpeg" alt="Placeholder avatar" />
         <% } %>
-  
+  </div>
   </div>
 <div class="home_page_text">
      <h1><%= stekje.naam  %></h1> 
